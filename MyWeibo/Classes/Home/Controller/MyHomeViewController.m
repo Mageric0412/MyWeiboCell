@@ -14,13 +14,13 @@
 #import "MyOneViewController.h"
 #import "UIView+MyFrame.h"
 #import "UIImage+Image.h"
-#import "MyStatusCell.h"
+
 #import "MyStatus.h"
 #import "MyUser.h"
 #import "MJExtension.h"
 #import "UIImageView+WebCache.h"
 #import "MJRefresh.h"
-#import "MyStatusFrame.h"
+
 #import "MyStatusTool.h"
 #import "MyUserTool.h"
 #import "MyAccountTool.h"
@@ -32,18 +32,18 @@
 
 @property (nonatomic, strong) MyOneViewController *one;
 
-@property (nonatomic, strong) NSMutableArray *statusFrames;
+@property (nonatomic, strong) NSMutableArray *statuses;
 
 @end
 
 @implementation MyHomeViewController
 
-- (NSMutableArray *)statusFrames
+- (NSMutableArray *)statuses
 {
-    if (_statusFrames == nil) {
-        _statusFrames = [NSMutableArray array];
+    if (_statuses == nil) {
+        _statuses = [NSMutableArray array];
     }
-    return _statusFrames;
+    return _statuses;
 }
 
 -(MyOneViewController *) one
@@ -56,8 +56,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    self.tableView.backgroundColor=[UIColor lightGrayColor];
     
     [self setUpNavigationBar];
     // 添加下拉刷新控件
@@ -100,9 +98,8 @@
 - (void)loadMoreStatus
 {
     NSString *maxIdStr = nil;
-    if (self.statusFrames.count) { // 有微博数据，才需要下拉刷新
-        MyStatus *s=[self.statusFrames[0] status];
-        long long maxId = [s.idstr longLongValue] - 1;
+    if (self.statuses.count) { // 有微博数据，才需要下拉刷新
+        long long maxId = [[[self.statuses lastObject] idstr] longLongValue] - 1;
         maxIdStr = [NSString stringWithFormat:@"%lld",maxId];
     }
     
@@ -111,14 +108,9 @@
         
         // 结束上拉刷新
         [self.tableView footerEndRefreshing];
-        NSMutableArray *statusFrames=[NSMutableArray array];
-        for (MyStatus *status in statuses) {
-            MyStatusFrame * statusF=[[MyStatusFrame alloc]init];
-            statusF.status=status;
-            [statusFrames addObject:statusF];
-        }
+        
         // 把数组中的元素添加进去
-        [self.statusFrames addObjectsFromArray:statusFrames];
+        [self.statuses addObjectsFromArray:statuses];
         
         // 刷新表格
         [self.tableView reloadData];
@@ -163,9 +155,9 @@
 - (void)loadNewStatus
 {
     NSString *sinceId = nil;
-    if (self.statusFrames.count) { // 有微博数据，才需要下拉刷新
-        MyStatus *s=[self.statusFrames[0] status];
-            sinceId = s.idstr;
+    if (self.statuses.count) { // 有微博数据，才需要下拉刷新
+        
+        sinceId = [self.statuses[0] idstr];
     }
     
     [MyStatusTool newStatusWithSinceId:sinceId success:^(NSArray *statuses) { // 请求成功的Block
@@ -173,16 +165,9 @@
         // 结束下拉刷新
         [self.tableView headerEndRefreshing];
         
-        //模型转化视图模型MyStatus->MyStatusFrame
-        NSMutableArray *statusFrames=[NSMutableArray array];
-        for (MyStatus *status in statuses) {
-            MyStatusFrame * statusF=[[MyStatusFrame alloc]init];
-            statusF.status=status;
-            [statusFrames addObject:statusF];
-        }
         NSIndexSet *indexSet = [NSIndexSet indexSetWithIndexesInRange:NSMakeRange(0, statuses.count)];
         // 把最新的微博数插入到最前面
-        [self.statusFrames insertObjects:statusFrames atIndexes:indexSet];
+        [self.statuses insertObjects:statuses atIndexes:indexSet];
         
         // 刷新表格
         [self.tableView reloadData];
@@ -255,12 +240,6 @@
    
 }
 
--(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
-     MyStatusFrame *statusF = self.statusFrames[indexPath.row];
-    
-    return statusF.cellHeight;
-}
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
@@ -269,21 +248,26 @@
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return self.statusFrames.count;
+    return self.statuses.count;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    MyStatusCell *cell=[MyStatusCell cellWithTableView:tableView];
+    static NSString *ID = @"cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:ID ];
+    
+    // Configure the cell...
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:ID];
+    }
     
     // 获取status模型
-    MyStatusFrame *statusF = self.statusFrames[indexPath.row];
+    MyStatus *status = self.statuses[indexPath.row];
     
-//    // 用户昵称
-//    cell.textLabel.text = status.user.name;
-//    [cell.imageView sd_setImageWithURL:status.user.profile_image_url placeholderImage:[UIImage imageNamed:@"timeline_image_placeholder"]];
-//    cell.detailTextLabel.text = status.text;
-    cell.statusF=statusF;
+    // 用户昵称
+    cell.textLabel.text = status.user.name;
+    [cell.imageView sd_setImageWithURL:status.user.profile_image_url placeholderImage:[UIImage imageNamed:@"timeline_image_placeholder"]];
+    cell.detailTextLabel.text = status.text;
     
     return cell;
 }

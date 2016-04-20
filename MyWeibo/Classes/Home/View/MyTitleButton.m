@@ -39,6 +39,7 @@
     
     // title
     self.titleLabel.x = self.imageView.x;
+    NSLog(@"%g",self.titleLabel.x);
     // image
     self.imageView.x = CGRectGetMaxX(self.titleLabel.frame);
     

@@ -7,12 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		973398BC1CC7A83500924E4D /* MyStatusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 973398BB1CC7A83500924E4D /* MyStatusCell.m */; };
-		973398BF1CC7AB3500924E4D /* MyOriginalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 973398BE1CC7AB3500924E4D /* MyOriginalView.m */; };
-		973398C21CC7AB7000924E4D /* MyRepostView.m in Sources */ = {isa = PBXBuildFile; fileRef = 973398C11CC7AB7000924E4D /* MyRepostView.m */; };
-		973398C51CC7ABD000924E4D /* MyStatusToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 973398C41CC7ABD000924E4D /* MyStatusToolBar.m */; };
-		973398C91CC7B39F00924E4D /* MyStatusFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 973398C81CC7B39F00924E4D /* MyStatusFrame.m */; };
-		973398CB1CC7B4FD00924E4D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 973398CA1CC7B4FD00924E4D /* CoreGraphics.framework */; };
 		97515AEA1CC0AE640077A22F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97515AE91CC0AE640077A22F /* Assets.xcassets */; };
 		97515AF81CC0AE640077A22F /* MyWeiboTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 97515AF71CC0AE640077A22F /* MyWeiboTests.m */; };
 		97515B031CC0AE640077A22F /* MyWeiboUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 97515B021CC0AE640077A22F /* MyWeiboUITests.m */; };
@@ -119,17 +113,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		973398BA1CC7A83500924E4D /* MyStatusCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyStatusCell.h; sourceTree = "<group>"; };
-		973398BB1CC7A83500924E4D /* MyStatusCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyStatusCell.m; sourceTree = "<group>"; };
-		973398BD1CC7AB3500924E4D /* MyOriginalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOriginalView.h; sourceTree = "<group>"; };
-		973398BE1CC7AB3500924E4D /* MyOriginalView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyOriginalView.m; sourceTree = "<group>"; };
-		973398C01CC7AB7000924E4D /* MyRepostView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyRepostView.h; sourceTree = "<group>"; };
-		973398C11CC7AB7000924E4D /* MyRepostView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyRepostView.m; sourceTree = "<group>"; };
-		973398C31CC7ABD000924E4D /* MyStatusToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyStatusToolBar.h; sourceTree = "<group>"; };
-		973398C41CC7ABD000924E4D /* MyStatusToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyStatusToolBar.m; sourceTree = "<group>"; };
-		973398C71CC7B39F00924E4D /* MyStatusFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyStatusFrame.h; sourceTree = "<group>"; };
-		973398C81CC7B39F00924E4D /* MyStatusFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyStatusFrame.m; sourceTree = "<group>"; };
-		973398CA1CC7B4FD00924E4D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		97515ADA1CC0AE640077A22F /* MyWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97515AE91CC0AE640077A22F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97515AEE1CC0AE640077A22F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -312,7 +295,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				973398CB1CC7B4FD00924E4D /* CoreGraphics.framework in Frameworks */,
 				978A543B1CC65C700062485E /* UIKit.framework in Frameworks */,
 				978A54391CC65C670062485E /* AVFoundation.framework in Frameworks */,
 			);
@@ -335,34 +317,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		973398B91CC7A80800924E4D /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				973398BA1CC7A83500924E4D /* MyStatusCell.h */,
-				973398BB1CC7A83500924E4D /* MyStatusCell.m */,
-				973398BD1CC7AB3500924E4D /* MyOriginalView.h */,
-				973398BE1CC7AB3500924E4D /* MyOriginalView.m */,
-				973398C01CC7AB7000924E4D /* MyRepostView.h */,
-				973398C11CC7AB7000924E4D /* MyRepostView.m */,
-				973398C31CC7ABD000924E4D /* MyStatusToolBar.h */,
-				973398C41CC7ABD000924E4D /* MyStatusToolBar.m */,
-			);
-			path = Cell;
-			sourceTree = "<group>";
-		};
-		973398C61CC7B38200924E4D /* ModelView */ = {
-			isa = PBXGroup;
-			children = (
-				973398C71CC7B39F00924E4D /* MyStatusFrame.h */,
-				973398C81CC7B39F00924E4D /* MyStatusFrame.m */,
-			);
-			path = ModelView;
-			sourceTree = "<group>";
-		};
 		97515AD11CC0AE640077A22F = {
 			isa = PBXGroup;
 			children = (
-				973398CA1CC7B4FD00924E4D /* CoreGraphics.framework */,
 				978A543A1CC65C700062485E /* UIKit.framework */,
 				978A54381CC65C670062485E /* AVFoundation.framework */,
 				97515ADC1CC0AE640077A22F /* MyWeibo */,
@@ -830,7 +787,6 @@
 		97F5F7CC1CC49EA4001E2575 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				973398C61CC7B38200924E4D /* ModelView */,
 				978A54631CC667CD0062485E /* MyStatus.h */,
 				978A54641CC667CD0062485E /* MyStatus.m */,
 				978A54661CC667DA0062485E /* MyUser.h */,
@@ -844,7 +800,6 @@
 		97F5F7CD1CC49EA4001E2575 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				973398B91CC7A80800924E4D /* Cell */,
 				9788CFA81CC4AC5B006EC2BC /* MyTitleButton.h */,
 				9788CFA91CC4AC5B006EC2BC /* MyTitleButton.m */,
 				9788CFAB1CC4AC77006EC2BC /* MyPopMenu.h */,
@@ -1110,7 +1065,6 @@
 				978A54531CC65EE20062485E /* MyUserTool.m in Sources */,
 				9788CFA11CC4AB6A006EC2BC /* MySearchBar.m in Sources */,
 				978A54221CC65C4B0062485E /* MJRefreshConst.m in Sources */,
-				973398BC1CC7A83500924E4D /* MyStatusCell.m in Sources */,
 				978A54161CC65C4B0062485E /* MBProgressHUD+MJ.m in Sources */,
 				978A54591CC65F240062485E /* MyStatusResult.m in Sources */,
 				978A54271CC65C4B0062485E /* UIView+MJExtension.m in Sources */,
@@ -1120,7 +1074,6 @@
 				97F5F7E91CC49EA4001E2575 /* main.m in Sources */,
 				978A54341CC65C4B0062485E /* UIImage+WebP.m in Sources */,
 				978A542C1CC65C4B0062485E /* SDWebImageDecoder.m in Sources */,
-				973398C51CC7ABD000924E4D /* MyStatusToolBar.m in Sources */,
 				978A542B1CC65C4B0062485E /* SDWebImageCompat.m in Sources */,
 				978A54231CC65C4B0062485E /* MJRefreshFooterView.m in Sources */,
 				978A54121CC65C4B0062485E /* AFURLConnectionOperation.m in Sources */,
@@ -1130,7 +1083,6 @@
 				978A54191CC65C4B0062485E /* MJConst.m in Sources */,
 				978A54651CC667CD0062485E /* MyStatus.m in Sources */,
 				9788CFCF1CC4B839006EC2BC /* UIView+MyFrame.m in Sources */,
-				973398C91CC7B39F00924E4D /* MyStatusFrame.m in Sources */,
 				978A54351CC65C4B0062485E /* UIImageView+HighlightedWebCache.m in Sources */,
 				9788CFBC1CC4ADA0006EC2BC /* MyMessageViewController.m in Sources */,
 				9788CFB31CC4AD0F006EC2BC /* MyNavigationController.m in Sources */,
@@ -1141,7 +1093,6 @@
 				978A54311CC65C4B0062485E /* UIButton+WebCache.m in Sources */,
 				978A540D1CC65C4B0062485E /* AFHTTPRequestOperation.m in Sources */,
 				9788CF9E1CC4AB28006EC2BC /* MyDiscoverViewController.m in Sources */,
-				973398BF1CC7AB3500924E4D /* MyOriginalView.m in Sources */,
 				978A54411CC65D3D0062485E /* MyAccountTool.m in Sources */,
 				978A54101CC65C4B0062485E /* AFNetworkReachabilityManager.m in Sources */,
 				978A54181CC65C4B0062485E /* MBProgressHUD.m in Sources */,
@@ -1190,7 +1141,6 @@
 				9788CFBF1CC4ADC2006EC2BC /* MyProfileViewController.m in Sources */,
 				978A541A1CC65C4B0062485E /* MJFoundation.m in Sources */,
 				978A54501CC65ED50062485E /* MyUserResult.m in Sources */,
-				973398C21CC7AB7000924E4D /* MyRepostView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
