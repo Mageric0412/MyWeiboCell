@@ -1,0 +1,29 @@
+//
+//  MyWeibo.pch
+//  MyWeibo
+//
+//  Created by mageric-mac on 16/4/18.
+//  Copyright © 2016年 mageric-mac. All rights reserved.
+//
+
+
+#ifdef __OBJC__
+
+#import "UIView+MyFrame.h"
+#import "UIImage+Image.h"
+
+#define MyKeyWindow [UIApplication sharedApplication].keyWindow
+
+// ...表示宏定义的可变参数
+// __VA_ARGS__:表示函数里面的可变参数
+#ifdef DEBUG // 调试
+
+#define CZLog(...) NSLog(__VA_ARGS__)
+
+#else // 发布
+
+#define CZLog(...)
+
+#endif
+
+#endif
