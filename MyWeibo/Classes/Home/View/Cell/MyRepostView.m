@@ -10,11 +10,16 @@
 #import "MyStatus.h"
 #import "MyStatusFrame.h"
 #import "UIImage+Image.h"
+#import "MyPhotosView.h"
 
 @interface MyRepostView()
 
 @property(nonatomic,weak) UILabel *nameView ;
+
+@property(nonatomic, weak) MyPhotosView *photosView;
+
 @property(nonatomic,weak)UILabel *textView ;
+
 @end
 
 @implementation MyRepostView
@@ -49,6 +54,10 @@
     [self addSubview:textView];
     _textView=textView;
     
+    MyPhotosView *photosView=[[MyPhotosView alloc]init];
+    [self addSubview:photosView];
+    _photosView=photosView;
+    
 }
 -(void)setStatusF:(MyStatusFrame *)statusF
 {
@@ -56,12 +65,14 @@
     MyStatus *status = statusF.status;
     // 昵称
     _nameView.frame = statusF.repostNameFrame;
-    _nameView.text = status.retweeted_status.user.name;
-    
+    _nameView.text =status.retweetedName;
     // 正文
     _textView.frame = statusF.repostTextFrame;
     _textView.text = status.retweeted_status.text;
    
+    _photosView.frame=statusF.repostPhotosFrame;
+#warning 转发配图数据
+    _photosView.pic_urls=status.retweeted_status.pic_urls;
 }
 
 @end

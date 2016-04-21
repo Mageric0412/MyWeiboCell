@@ -10,7 +10,9 @@
 #import "MyOriginalView.h"
 #import "MyRepostView.h"
 #import "MyStatusToolBar.h"
-#import "myStatusFrame.h"
+#import "MyStatusFrame.h"
+#import "MyStatus.h"
+
 @interface MyStatusCell ()
 
 @property(nonatomic,weak) MyOriginalView *originView;
@@ -41,12 +43,20 @@
     _originView.frame = statusF.originalViewFrame;
     _originView.statusF = statusF;
     
+    if (statusF.status.retweeted_status) {
+        _repostView.frame = statusF.repostViewFrame;
+        _repostView.statusF = statusF;
+        _repostView.hidden=NO;
+    }
+    else {
+        _repostView.hidden=YES;
+    }
     // 设置原创微博frame
-    _repostView.frame = statusF.repostViewFrame;
-    _repostView.statusF = statusF;
+    
     
     // 设置工具条frame
     _toolBar.frame = statusF.toolBarFrame;
+    _toolBar.status=statusF.status;
 }
 
 +(instancetype)cellWithTableView:(UITableView *)tableView

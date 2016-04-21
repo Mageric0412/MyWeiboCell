@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MyWeibo/Classes/Home/View/Cell/MyRepostView.m"
-            timestampString = "482858517.840534"
+            timestampString = "482919354.170728"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "63"
-            endingLineNumber = "63"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
             landmarkName = "-setStatusF:"
             landmarkType = "5">
          </BreakpointContent>

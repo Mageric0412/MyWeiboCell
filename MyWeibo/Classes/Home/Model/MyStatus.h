@@ -17,6 +17,8 @@
  */
 @property (nonatomic, strong) MyStatus *retweeted_status;
 
+
+@property(nonatomic,copy)NSString *retweetedName;
 /**
  *  用户
  */

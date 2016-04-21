@@ -58,7 +58,7 @@
     [super viewDidLoad];
     
     self.tableView.backgroundColor=[UIColor lightGrayColor];
-    
+    self.tableView.separatorStyle=UITableViewCellSeparatorStyleNone;
     [self setUpNavigationBar];
     // 添加下拉刷新控件
     [self.tableView addHeaderWithTarget:self action:@selector(loadNewStatus)];
@@ -147,6 +147,7 @@
     
     [self.navigationController.view insertSubview:newlabel belowSubview:self.navigationController.navigationBar];
     //[self.view addSubview:newlabel];
+    
     [UIView animateWithDuration:0.2 animations:^{
         newlabel.transform=CGAffineTransformMakeTranslation(0, h);
     } completion:^(BOOL finished) {

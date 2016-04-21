@@ -39,6 +39,8 @@
 
 @property(nonatomic,assign) CGRect originalTextFrame;
 
+@property(nonatomic,assign) CGRect originalPhotosFrame;
+
 
 @property(nonatomic,assign) CGRect repostViewFrame;
 
@@ -46,9 +48,10 @@
 
 @property(nonatomic,assign) CGRect repostTextFrame;
 
+@property(nonatomic,assign) CGRect repostPhotosFrame;
+
 
 @property(nonatomic,assign) CGRect toolBarFrame;
-
 
 @property(nonatomic,assign) CGFloat cellHeight;
 

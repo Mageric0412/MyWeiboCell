@@ -11,8 +11,11 @@
 #import "MyStatusFrame.h"
 #import "UIImageView+WebCache.h"
 #import "UIImage+Image.h"
+#import "MyPhotosView.h"
 
 @interface MyOriginalView ()
+
+@property(nonatomic, weak) MyPhotosView *photosView;
 
 @property(nonatomic,weak) UIImageView *iconView;
 
@@ -82,8 +85,11 @@
     
     // 正文
     _textView.text = status.text;
+#warning 原创配图数据
+    _photosView.pic_urls=status.pic_urls;
 }
 
+//每次有新的时间都要重新计算框架
 -(void)setUpFrame
 {
     _iconView.frame=_statusF.originalIconFrame;
@@ -96,9 +102,25 @@
         _vipView.hidden=YES;
     }
     
-    _sourceView.frame=_statusF.originalSourceFrame;
-    _timeView.frame=_statusF.originalTimeFrame;
+    // 时间
+    MyStatus *status=_statusF.status;
+    CGFloat timeX = _nameView.frame.origin.x;
+    CGFloat timeY = CGRectGetMaxY(_nameView.frame) + MyStatusCellMargin * 0.5;
+    CGSize timeSize = [status.created_at sizeWithFont:MyTimeFont];
+    _timeView.frame = (CGRect){{timeX,timeY},timeSize};
+    
+    // 来源
+    CGFloat sourceX = CGRectGetMaxX(_timeView.frame) + MyStatusCellMargin;
+    CGFloat sourceY = timeY;
+    CGSize sourceSize = [status.source sizeWithFont:MySourceFont];
+    _sourceView.frame = (CGRect){{sourceX,sourceY},sourceSize};
+    
+    //_sourceView.frame=_statusF.originalSourceFrame;
+    //_timeView.frame=_statusF.originalTimeFrame;
     _textView.frame=_statusF.originalTextFrame;
+    
+    _photosView.frame=_statusF.originalPhotosFrame;
+    
 }
 
 -(void)setUpAllChildView
@@ -124,6 +146,7 @@
     
     UILabel *sourceView =[[UILabel alloc]init];
     sourceView.font=MySourceFont;
+     sourceView.textColor=[UIColor lightGrayColor];
     [self addSubview:sourceView];
     _sourceView=sourceView;
     
@@ -132,6 +155,10 @@
     textView.numberOfLines=0;
     [self addSubview:textView];
     _textView=textView;
+    
+    MyPhotosView *photosView=[[MyPhotosView alloc]init];
+    [self addSubview:photosView];
+    _photosView=photosView;
 }
 
 @end

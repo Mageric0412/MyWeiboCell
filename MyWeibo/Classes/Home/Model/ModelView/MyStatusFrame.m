@@ -36,6 +36,19 @@
     
 }
 
+//计算配图尺寸
+-(CGSize) photosSizeWithCount:(int)count
+{
+    int cols= count == 4?2:3;
+    int rows=(count-1)/cols+1;
+    CGFloat photoWH=MyStatusCellWH*2;
+    CGFloat w=cols*photoWH+(cols-1)*MyStatusCellMargin;
+    CGFloat h=rows*photoWH+(rows-1)*MyStatusCellMargin;
+    
+    return CGSizeMake(w, h);
+    
+}
+
 -(void)setUpOriginalViewFrame
 {
     CGFloat imageX=MyStatusCellMargin;
@@ -56,17 +69,18 @@
         _originalVipFrame = CGRectMake(vipX, vipY, vipWH, vipWH);
     }
     
-    // 时间
-    CGFloat timeX = nameX;
-    CGFloat timeY = CGRectGetMaxY(_originalNameFrame) + MyStatusCellMargin * 0.5;
-    CGSize timeSize = [_status.created_at sizeWithFont:MyTimeFont];
-    _originalTimeFrame = (CGRect){{timeX,timeY},timeSize};
-    
-    // 来源
-    CGFloat sourceX = CGRectGetMaxX(_originalTimeFrame) + MyStatusCellMargin;
-    CGFloat sourceY = timeY;
-    CGSize sourceSize = [_status.source sizeWithFont:MySourceFont];
-    _originalSourceFrame = (CGRect){{sourceX,sourceY},sourceSize};
+//时间跟来源要在每次更新时重新计算框架
+//    // 时间
+//    CGFloat timeX = nameX;
+//    CGFloat timeY = CGRectGetMaxY(_originalNameFrame) + MyStatusCellMargin * 0.5;
+//    CGSize timeSize = [_status.created_at sizeWithFont:MyTimeFont];
+//    _originalTimeFrame = (CGRect){{timeX,timeY},timeSize};
+//    
+//    // 来源
+//    CGFloat sourceX = CGRectGetMaxX(_originalTimeFrame) + MyStatusCellMargin;
+//    CGFloat sourceY = timeY;
+//    CGSize sourceSize = [_status.source sizeWithFont:MySourceFont];
+//    _originalSourceFrame = (CGRect){{sourceX,sourceY},sourceSize};
     
     // 正文
     CGFloat textX = imageX;
@@ -76,11 +90,22 @@
     CGSize textSize = [_status.text sizeWithFont:MyTextFont constrainedToSize:CGSizeMake(textW, MAXFLOAT)];
     _originalTextFrame = (CGRect){{textX,textY},textSize};
     
+    CGFloat originH = CGRectGetMaxY(_originalTextFrame) + MyStatusCellMargin;
+    
+    if (_status.pic_urls.count) {
+        
+        CGFloat photosX=MyStatusCellMargin;
+        CGFloat photosY=CGRectGetMaxY(_originalTextFrame)+MyStatusCellMargin;
+        CGSize photosSize=[self photosSizeWithCount:_status.pic_urls.count];
+        _originalPhotosFrame=(CGRect){{photosX,photosY},photosSize};
+        originH = CGRectGetMaxY(_originalPhotosFrame) + MyStatusCellMargin;
+    }
+    
     // 原创微博的frame
     CGFloat originX = 0;
     CGFloat originY = 10;
     CGFloat originW = MyScreenW;
-    CGFloat originH = CGRectGetMaxY(_originalTextFrame) + MyStatusCellMargin;
+    
     _originalViewFrame = CGRectMake(originX, originY, originW, originH);
     
 }
@@ -92,7 +117,7 @@
     CGFloat nameX = MyStatusCellMargin;
     CGFloat nameY = nameX;
     // 注意：一定要是转发微博的用户昵称
-    CGSize nameSize = [_status.retweeted_status.user.name sizeWithFont:MyNameFont];
+    CGSize nameSize = [_status.retweetedName sizeWithFont:MyNameFont];
     _repostNameFrame = (CGRect){{nameX,nameY},nameSize};
     
     // 正文
@@ -104,11 +129,22 @@
     CGSize textSize = [_status.retweeted_status.text sizeWithFont:MyTextFont constrainedToSize:CGSizeMake(textW, MAXFLOAT)];
     _repostTextFrame = (CGRect){{textX,textY},textSize};
     
+     CGFloat repostH = CGRectGetMaxY(_repostTextFrame) + MyStatusCellMargin;
+    
+    int retPicCount =_status.retweeted_status.pic_urls.count;
+    
+    if (retPicCount) {
+        CGFloat photosX=MyStatusCellMargin;
+        CGFloat photosY=CGRectGetMaxY(_repostTextFrame)+MyStatusCellMargin;
+        CGSize photosSize=[self photosSizeWithCount:retPicCount];
+        _repostPhotosFrame=(CGRect){{photosX,photosY},photosSize};
+        repostH = CGRectGetMaxY(_repostPhotosFrame) + MyStatusCellMargin;
+    }
     // 原创微博的frame
     CGFloat repostX = 0;
     CGFloat repostY = CGRectGetMaxY(_originalViewFrame);
     CGFloat repostW = MyScreenW;
-    CGFloat repostH = CGRectGetMaxY(_repostTextFrame) + MyStatusCellMargin;
+    
     _repostViewFrame = CGRectMake(repostX, repostY, repostW, repostH);
 }
 
