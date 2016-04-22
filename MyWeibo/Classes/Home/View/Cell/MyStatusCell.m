@@ -57,6 +57,8 @@
     // 设置工具条frame
     _toolBar.frame = statusF.toolBarFrame;
     _toolBar.status=statusF.status;
+    MyStatus *st=statusF.status;
+    NSLog(@"用户:%@ ,%d ,%d, %d",statusF.status.user.name,st.reposts_count,st.comments_count,st.attitudes_count);
 }
 
 +(instancetype)cellWithTableView:(UITableView *)tableView

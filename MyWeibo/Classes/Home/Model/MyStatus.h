@@ -17,8 +17,11 @@
  */
 @property (nonatomic, strong) MyStatus *retweeted_status;
 
+/**
+ *  转发微博昵称
+ */
+@property (nonatomic, copy) NSString *retweetName;
 
-@property(nonatomic,copy)NSString *retweetedName;
 /**
  *  用户
  */

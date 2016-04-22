@@ -117,7 +117,7 @@
     CGFloat nameX = MyStatusCellMargin;
     CGFloat nameY = nameX;
     // 注意：一定要是转发微博的用户昵称
-    CGSize nameSize = [_status.retweetedName sizeWithFont:MyNameFont];
+    CGSize nameSize = [_status.retweetName sizeWithFont:MyNameFont];
     _repostNameFrame = (CGRect){{nameX,nameY},nameSize};
     
     // 正文

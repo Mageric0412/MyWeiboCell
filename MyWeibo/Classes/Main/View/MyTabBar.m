@@ -86,12 +86,21 @@
         // sizeToFit:默认会根据按钮的背景图片或者image和文字计算出按钮的最合适的尺寸
         [btn sizeToFit];
         
+        [btn addTarget:self action:@selector(plusClick) forControlEvents:UIControlEventTouchUpInside];
         _plusButton = btn;
         
         [self addSubview:_plusButton];
     }
     return _plusButton;
 }
+
+-(void)plusClick
+{
+    if ([_delegate respondsToSelector:@selector(tabBarDidClickPlusButton:)]) {
+        [_delegate tabBarDidClickPlusButton:self];
+    }
+}
+
 /*
 // Only override drawRect: if you perform custom drawing.
 // An empty implementation adversely affects performance during animation.

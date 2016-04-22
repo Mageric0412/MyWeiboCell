@@ -13,7 +13,10 @@
 @protocol MyTabBarDelegate <NSObject>
 
 @optional
+
 -(void)tabBar:(MyTabBar*)tabBar didClickButton:(NSInteger)index;
+
+-(void)tabBarDidClickPlusButton:(MyTabBar*)tabBar ;
 @end
 
 @interface MyTabBar : UIView

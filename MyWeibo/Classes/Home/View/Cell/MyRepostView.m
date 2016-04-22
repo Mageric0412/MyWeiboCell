@@ -65,7 +65,7 @@
     MyStatus *status = statusF.status;
     // 昵称
     _nameView.frame = statusF.repostNameFrame;
-    _nameView.text =status.retweetedName;
+    _nameView.text =status.retweetName;
     // 正文
     _textView.frame = statusF.repostTextFrame;
     _textView.text = status.retweeted_status.text;

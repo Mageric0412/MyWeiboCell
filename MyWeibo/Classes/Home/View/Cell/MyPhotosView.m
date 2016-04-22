@@ -12,6 +12,7 @@
 #import "MyStatusFrame.h"
 #import "MJPhotoBrowser.h"
 #import "MJPhoto.h"
+#import "MyPhotoView.h"
 
 @implementation MyPhotosView
 
@@ -37,10 +38,8 @@
 -(void)setUpAllChildView
 {
     for (int i=0; i<9; i++) {
-        UIImageView *imageV =[[UIImageView alloc]init];
-        imageV.userInteractionEnabled=YES;
-        imageV.contentMode=UIViewContentModeScaleAspectFill;
-        imageV.clipsToBounds=YES;
+        MyPhotoView *imageV =[[MyPhotoView alloc]init];
+        
         imageV.tag=i;
         UITapGestureRecognizer *tap=[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(tap:)];
         [imageV addGestureRecognizer:tap];
@@ -80,14 +79,15 @@
     _pic_urls=pic_urls;
     int count=self.subviews.count;
     for (int i =0; i<count; i++) {
-        UIImageView *imageV=self.subviews[i];
+        
+        MyPhotoView *imageV=self.subviews[i];
         
         if (i<pic_urls.count) {
             
             imageV.hidden=NO;
             MyPhoto *photo=_pic_urls[i];
-            [imageV sd_setImageWithURL:photo.thumbnail_pic placeholderImage:[UIImage imageNamed:@"timeline_image_placeholder"]];
-            
+            imageV.photo=photo;
+                 
         }else{
             imageV.hidden=YES;
         }

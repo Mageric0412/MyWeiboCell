@@ -20,6 +20,7 @@
 {
     NSDateFormatter *fmt=[[NSDateFormatter alloc]init];
     fmt.dateFormat=@"EEE MMM d HH:mm:ss Z yyyy";
+    fmt.locale=[NSLocale localeWithLocaleIdentifier:@"en_us"];
     NSDate  *created_at=[fmt dateFromString:_created_at];
     
     if ([created_at isThisYear]) {//今年
@@ -65,7 +66,7 @@
 -(void)setRetweeted_status:(MyStatus *)retweeted_status
 {
     _retweeted_status=retweeted_status;
-    _retweetedName=[NSString stringWithFormat:@"@%@",_retweeted_status.user.name];
+    _retweetName=[NSString stringWithFormat:@"@%@",_retweeted_status.user.name];
     
 }
 

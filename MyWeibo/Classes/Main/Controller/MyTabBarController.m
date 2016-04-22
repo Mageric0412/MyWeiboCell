@@ -17,6 +17,7 @@
 #import "MyNavigationController.h"
 #import "MyUserTool.h"
 #import "MyUserResult.h"
+#import "MyComposeViewController.h"
 
 @interface MyTabBarController ()<MyTabBarDelegate>
 
@@ -110,7 +111,14 @@
         [_home refresh];
     }
     self.selectedIndex = index;
-    NSLog(@"%lu",self.selectedIndex);
+}
+
+-(void)tabBarDidClickPlusButton:(MyTabBar *)tabBar
+{
+    MyComposeViewController* composeVc=[[MyComposeViewController alloc]init];
+    MyNavigationController *nav=[[MyNavigationController alloc]initWithRootViewController:composeVc];
+    
+    [self presentViewController:nav animated:YES completion:nil];
 }
 
 - (void)viewWillAppear:(BOOL)animated

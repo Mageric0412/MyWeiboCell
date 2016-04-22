@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		971D0CBA1CC9F24300212BA7 /* MyTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 971D0CB91CC9F24300212BA7 /* MyTextView.m */; };
+		971D0CBD1CC9FAA800212BA7 /* MyComposeToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 971D0CBC1CC9FAA800212BA7 /* MyComposeToolBar.m */; };
+		971D0CC01CCA148D00212BA7 /* MyComposePhotosView.m in Sources */ = {isa = PBXBuildFile; fileRef = 971D0CBF1CCA148D00212BA7 /* MyComposePhotosView.m */; };
+		971D0CC61CCA1BD100212BA7 /* MyComposeParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 971D0CC51CCA1BD100212BA7 /* MyComposeParam.m */; };
+		971D0CC91CCA1C4500212BA7 /* MyUploadParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 971D0CC81CCA1C4500212BA7 /* MyUploadParam.m */; };
+		971D0CCC1CCA1C6F00212BA7 /* MyComposeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 971D0CCB1CCA1C6F00212BA7 /* MyComposeTool.m */; };
 		973398BC1CC7A83500924E4D /* MyStatusCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 973398BB1CC7A83500924E4D /* MyStatusCell.m */; };
 		973398BF1CC7AB3500924E4D /* MyOriginalView.m in Sources */ = {isa = PBXBuildFile; fileRef = 973398BE1CC7AB3500924E4D /* MyOriginalView.m */; };
 		973398C21CC7AB7000924E4D /* MyRepostView.m in Sources */ = {isa = PBXBuildFile; fileRef = 973398C11CC7AB7000924E4D /* MyRepostView.m */; };
@@ -16,6 +22,8 @@
 		97515AEA1CC0AE640077A22F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97515AE91CC0AE640077A22F /* Assets.xcassets */; };
 		97515AF81CC0AE640077A22F /* MyWeiboTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 97515AF71CC0AE640077A22F /* MyWeiboTests.m */; };
 		97515B031CC0AE640077A22F /* MyWeiboUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 97515B021CC0AE640077A22F /* MyWeiboUITests.m */; };
+		9769FBCF1CC8ED02002B7349 /* MyPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9769FBCE1CC8ED02002B7349 /* MyPhotoView.m */; };
+		9769FBD61CC8F4C0002B7349 /* MyComposeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9769FBD51CC8F4C0002B7349 /* MyComposeViewController.m */; };
 		9788CF9E1CC4AB28006EC2BC /* MyDiscoverViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9788CF9D1CC4AB28006EC2BC /* MyDiscoverViewController.m */; };
 		9788CFA11CC4AB6A006EC2BC /* MySearchBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9788CFA01CC4AB6A006EC2BC /* MySearchBar.m */; };
 		9788CFA41CC4ABFF006EC2BC /* MyOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9788CFA31CC4ABFF006EC2BC /* MyOneViewController.m */; };
@@ -143,6 +151,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		971D0CB81CC9F24300212BA7 /* MyTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTextView.h; sourceTree = "<group>"; };
+		971D0CB91CC9F24300212BA7 /* MyTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTextView.m; sourceTree = "<group>"; };
+		971D0CBB1CC9FAA800212BA7 /* MyComposeToolBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyComposeToolBar.h; sourceTree = "<group>"; };
+		971D0CBC1CC9FAA800212BA7 /* MyComposeToolBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyComposeToolBar.m; sourceTree = "<group>"; };
+		971D0CBE1CCA148D00212BA7 /* MyComposePhotosView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyComposePhotosView.h; sourceTree = "<group>"; };
+		971D0CBF1CCA148D00212BA7 /* MyComposePhotosView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyComposePhotosView.m; sourceTree = "<group>"; };
+		971D0CC41CCA1BD100212BA7 /* MyComposeParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyComposeParam.h; sourceTree = "<group>"; };
+		971D0CC51CCA1BD100212BA7 /* MyComposeParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyComposeParam.m; sourceTree = "<group>"; };
+		971D0CC71CCA1C4500212BA7 /* MyUploadParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyUploadParam.h; sourceTree = "<group>"; };
+		971D0CC81CCA1C4500212BA7 /* MyUploadParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyUploadParam.m; sourceTree = "<group>"; };
+		971D0CCA1CCA1C6F00212BA7 /* MyComposeTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyComposeTool.h; sourceTree = "<group>"; };
+		971D0CCB1CCA1C6F00212BA7 /* MyComposeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyComposeTool.m; sourceTree = "<group>"; };
 		973398BA1CC7A83500924E4D /* MyStatusCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyStatusCell.h; sourceTree = "<group>"; };
 		973398BB1CC7A83500924E4D /* MyStatusCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyStatusCell.m; sourceTree = "<group>"; };
 		973398BD1CC7AB3500924E4D /* MyOriginalView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyOriginalView.h; sourceTree = "<group>"; };
@@ -163,6 +183,10 @@
 		97515AFE1CC0AE640077A22F /* MyWeiboUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyWeiboUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		97515B021CC0AE640077A22F /* MyWeiboUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyWeiboUITests.m; sourceTree = "<group>"; };
 		97515B041CC0AE640077A22F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9769FBCD1CC8ED02002B7349 /* MyPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPhotoView.h; sourceTree = "<group>"; };
+		9769FBCE1CC8ED02002B7349 /* MyPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPhotoView.m; sourceTree = "<group>"; };
+		9769FBD41CC8F4C0002B7349 /* MyComposeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyComposeViewController.h; sourceTree = "<group>"; };
+		9769FBD51CC8F4C0002B7349 /* MyComposeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyComposeViewController.m; sourceTree = "<group>"; };
 		9788CF9C1CC4AB28006EC2BC /* MyDiscoverViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDiscoverViewController.h; sourceTree = "<group>"; };
 		9788CF9D1CC4AB28006EC2BC /* MyDiscoverViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDiscoverViewController.m; sourceTree = "<group>"; };
 		9788CF9F1CC4AB6A006EC2BC /* MySearchBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySearchBar.h; sourceTree = "<group>"; };
@@ -392,6 +416,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		971D0CC21CCA1BA600212BA7 /* Compose */ = {
+			isa = PBXGroup;
+			children = (
+				971D0CC31CCA1BA600212BA7 /* Param */,
+				971D0CCA1CCA1C6F00212BA7 /* MyComposeTool.h */,
+				971D0CCB1CCA1C6F00212BA7 /* MyComposeTool.m */,
+			);
+			path = Compose;
+			sourceTree = "<group>";
+		};
+		971D0CC31CCA1BA600212BA7 /* Param */ = {
+			isa = PBXGroup;
+			children = (
+				971D0CC41CCA1BD100212BA7 /* MyComposeParam.h */,
+				971D0CC51CCA1BD100212BA7 /* MyComposeParam.m */,
+				971D0CC71CCA1C4500212BA7 /* MyUploadParam.h */,
+				971D0CC81CCA1C4500212BA7 /* MyUploadParam.m */,
+			);
+			path = Param;
+			sourceTree = "<group>";
+		};
 		973398B91CC7A80800924E4D /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -405,6 +450,8 @@
 				973398C41CC7ABD000924E4D /* MyStatusToolBar.m */,
 				97AE7D951CC8BDCE00A8289C /* MyPhotosView.h */,
 				97AE7D961CC8BDCE00A8289C /* MyPhotosView.m */,
+				9769FBCD1CC8ED02002B7349 /* MyPhotoView.h */,
+				9769FBCE1CC8ED02002B7349 /* MyPhotoView.m */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -477,6 +524,45 @@
 				97515B041CC0AE640077A22F /* Info.plist */,
 			);
 			path = MyWeiboUITests;
+			sourceTree = "<group>";
+		};
+		9769FBD01CC8F48A002B7349 /* Compose */ = {
+			isa = PBXGroup;
+			children = (
+				9769FBD11CC8F48A002B7349 /* Controller */,
+				9769FBD21CC8F48A002B7349 /* Model */,
+				9769FBD31CC8F48A002B7349 /* View */,
+			);
+			path = Compose;
+			sourceTree = "<group>";
+		};
+		9769FBD11CC8F48A002B7349 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9769FBD41CC8F4C0002B7349 /* MyComposeViewController.h */,
+				9769FBD51CC8F4C0002B7349 /* MyComposeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9769FBD21CC8F48A002B7349 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9769FBD31CC8F48A002B7349 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				971D0CB81CC9F24300212BA7 /* MyTextView.h */,
+				971D0CB91CC9F24300212BA7 /* MyTextView.m */,
+				971D0CBB1CC9FAA800212BA7 /* MyComposeToolBar.h */,
+				971D0CBC1CC9FAA800212BA7 /* MyComposeToolBar.m */,
+				971D0CBE1CCA148D00212BA7 /* MyComposePhotosView.h */,
+				971D0CBF1CCA148D00212BA7 /* MyComposePhotosView.m */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		9788CFC01CC4AE87006EC2BC /* Category */ = {
@@ -567,6 +653,7 @@
 		978A539D1CC659F70062485E /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				971D0CC21CCA1BA600212BA7 /* Compose */,
 				978A539E1CC659F70062485E /* Account */,
 				978A53A01CC659F70062485E /* BaseParam */,
 				978A53A11CC659F70062485E /* Choose */,
@@ -879,6 +966,7 @@
 				97F5F7D61CC49EA4001E2575 /* Message */,
 				97F5F7E11CC49EA4001E2575 /* Profile */,
 				978A53951CC659F70062485E /* NewFeature */,
+				9769FBD01CC8F48A002B7349 /* Compose */,
 				97F5F7CE1CC49EA4001E2575 /* Main */,
 				97F5F7DA1CC49EA4001E2575 /* Other */,
 			);
@@ -1251,8 +1339,10 @@
 				97F5F7E91CC49EA4001E2575 /* main.m in Sources */,
 				978A54341CC65C4B0062485E /* UIImage+WebP.m in Sources */,
 				978A542C1CC65C4B0062485E /* SDWebImageDecoder.m in Sources */,
+				971D0CBD1CC9FAA800212BA7 /* MyComposeToolBar.m in Sources */,
 				97DD0D961CC8D6060074205B /* MJPhotoLoadingView.m in Sources */,
 				973398C51CC7ABD000924E4D /* MyStatusToolBar.m in Sources */,
+				971D0CC01CCA148D00212BA7 /* MyComposePhotosView.m in Sources */,
 				978A542B1CC65C4B0062485E /* SDWebImageCompat.m in Sources */,
 				978A54231CC65C4B0062485E /* MJRefreshFooterView.m in Sources */,
 				978A54121CC65C4B0062485E /* AFURLConnectionOperation.m in Sources */,
@@ -1264,10 +1354,12 @@
 				978A54651CC667CD0062485E /* MyStatus.m in Sources */,
 				9788CFCF1CC4B839006EC2BC /* UIView+MyFrame.m in Sources */,
 				973398C91CC7B39F00924E4D /* MyStatusFrame.m in Sources */,
+				971D0CC91CCA1C4500212BA7 /* MyUploadParam.m in Sources */,
 				978A54351CC65C4B0062485E /* UIImageView+HighlightedWebCache.m in Sources */,
 				9788CFBC1CC4ADA0006EC2BC /* MyMessageViewController.m in Sources */,
 				9788CFB31CC4AD0F006EC2BC /* MyNavigationController.m in Sources */,
 				978A546B1CC667E30062485E /* MyPhoto.m in Sources */,
+				971D0CCC1CCA1C6F00212BA7 /* MyComposeTool.m in Sources */,
 				97F5F7E51CC49EA4001E2575 /* MyTabBarController.m in Sources */,
 				9788CFAD1CC4AC77006EC2BC /* MyPopMenu.m in Sources */,
 				978A542D1CC65C4B0062485E /* SDWebImageDownloader.m in Sources */,
@@ -1281,6 +1373,7 @@
 				978A54181CC65C4B0062485E /* MBProgressHUD.m in Sources */,
 				97DD0D951CC8D6060074205B /* MJPhotoBrowser.m in Sources */,
 				978A54471CC65DAB0062485E /* MyChooseTool.m in Sources */,
+				971D0CBA1CC9F24300212BA7 /* MyTextView.m in Sources */,
 				97F5F7E61CC49EA4001E2575 /* MyTabBar.m in Sources */,
 				978A54241CC65C4B0062485E /* MJRefreshHeaderView.m in Sources */,
 				978A54211CC65C4B0062485E /* MJRefreshBaseView.m in Sources */,
@@ -1316,9 +1409,12 @@
 				9788CFB91CC4AD5C006EC2BC /* MyBadgeView.m in Sources */,
 				978A541C1CC65C4B0062485E /* MJType.m in Sources */,
 				978A544A1CC65DF30062485E /* MyHttpTool.m in Sources */,
+				971D0CC61CCA1BD100212BA7 /* MyComposeParam.m in Sources */,
 				97F5F7E71CC49EA4001E2575 /* AppDelegate.m in Sources */,
 				978A54361CC65C4B0062485E /* UIImageView+WebCache.m in Sources */,
+				9769FBD61CC8F4C0002B7349 /* MyComposeViewController.m in Sources */,
 				978A54111CC65C4B0062485E /* AFSecurityPolicy.m in Sources */,
+				9769FBCF1CC8ED02002B7349 /* MyPhotoView.m in Sources */,
 				978A541B1CC65C4B0062485E /* MJIvar.m in Sources */,
 				978A543E1CC65CF50062485E /* MyOAthViewController.m in Sources */,
 				978A54281CC65C4B0062485E /* MKAnnotationView+WebCache.m in Sources */,
