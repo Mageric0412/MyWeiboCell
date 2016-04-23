@@ -19,6 +19,14 @@
 		973398C51CC7ABD000924E4D /* MyStatusToolBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 973398C41CC7ABD000924E4D /* MyStatusToolBar.m */; };
 		973398C91CC7B39F00924E4D /* MyStatusFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 973398C81CC7B39F00924E4D /* MyStatusFrame.m */; };
 		973398CB1CC7B4FD00924E4D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 973398CA1CC7B4FD00924E4D /* CoreGraphics.framework */; };
+		973E26901CCB165200F7628B /* MyBaseSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 973E268F1CCB165200F7628B /* MyBaseSettingViewController.m */; };
+		973E26931CCB16E200F7628B /* MyGroupItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 973E26921CCB16E200F7628B /* MyGroupItem.m */; };
+		973E26961CCB171C00F7628B /* MySettingItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 973E26951CCB171C00F7628B /* MySettingItem.m */; };
+		973E26991CCB194E00F7628B /* MySettingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 973E26981CCB194E00F7628B /* MySettingCell.m */; };
+		973E269C1CCB1D5C00F7628B /* MyArrowItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 973E269B1CCB1D5C00F7628B /* MyArrowItem.m */; };
+		973E269F1CCB2A0300F7628B /* MyBadgeItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 973E269E1CCB2A0300F7628B /* MyBadgeItem.m */; };
+		973E26A21CCB2B0900F7628B /* MySwitchItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 973E26A11CCB2B0900F7628B /* MySwitchItem.m */; };
+		973E26A51CCB2B4D00F7628B /* MyCheakItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 973E26A41CCB2B4D00F7628B /* MyCheakItem.m */; };
 		97515AEA1CC0AE640077A22F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97515AE91CC0AE640077A22F /* Assets.xcassets */; };
 		97515AF81CC0AE640077A22F /* MyWeiboTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 97515AF71CC0AE640077A22F /* MyWeiboTests.m */; };
 		97515B031CC0AE640077A22F /* MyWeiboUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 97515B021CC0AE640077A22F /* MyWeiboUITests.m */; };
@@ -127,6 +135,9 @@
 		97DD0D981CC8D6060074205B /* MJPhotoToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 97DD0D8E1CC8D6060074205B /* MJPhotoToolbar.m */; };
 		97DD0D991CC8D6060074205B /* MJPhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97DD0D901CC8D6060074205B /* MJPhotoView.m */; };
 		97DD0D9A1CC8D6060074205B /* SDWebImageManager+MJ.m in Sources */ = {isa = PBXBuildFile; fileRef = 97DD0D921CC8D6060074205B /* SDWebImageManager+MJ.m */; };
+		97DDA9841CCBB094005BA0DB /* MyProfileCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 97DDA9831CCBB094005BA0DB /* MyProfileCell.m */; };
+		97DDA9871CCBB405005BA0DB /* MyLabelItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 97DDA9861CCBB405005BA0DB /* MyLabelItem.m */; };
+		97DDA98E1CCBB697005BA0DB /* MySettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97DDA98D1CCBB697005BA0DB /* MySettingViewController.m */; };
 		97F5F7E51CC49EA4001E2575 /* MyTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F5F7D11CC49EA4001E2575 /* MyTabBarController.m */; };
 		97F5F7E61CC49EA4001E2575 /* MyTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F5F7D51CC49EA4001E2575 /* MyTabBar.m */; };
 		97F5F7E71CC49EA4001E2575 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 97F5F7DC1CC49EA4001E2575 /* AppDelegate.m */; };
@@ -174,6 +185,23 @@
 		973398C71CC7B39F00924E4D /* MyStatusFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyStatusFrame.h; sourceTree = "<group>"; };
 		973398C81CC7B39F00924E4D /* MyStatusFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyStatusFrame.m; sourceTree = "<group>"; };
 		973398CA1CC7B4FD00924E4D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		973E268E1CCB165200F7628B /* MyBaseSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBaseSettingViewController.h; sourceTree = "<group>"; };
+		973E268F1CCB165200F7628B /* MyBaseSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBaseSettingViewController.m; sourceTree = "<group>"; };
+		973E26911CCB16E200F7628B /* MyGroupItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyGroupItem.h; sourceTree = "<group>"; };
+		973E26921CCB16E200F7628B /* MyGroupItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyGroupItem.m; sourceTree = "<group>"; };
+		973E26941CCB171C00F7628B /* MySettingItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySettingItem.h; sourceTree = "<group>"; };
+		973E26951CCB171C00F7628B /* MySettingItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySettingItem.m; sourceTree = "<group>"; };
+		973E26971CCB194E00F7628B /* MySettingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySettingCell.h; sourceTree = "<group>"; };
+		973E26981CCB194E00F7628B /* MySettingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySettingCell.m; sourceTree = "<group>"; };
+		973E269A1CCB1D5C00F7628B /* MyArrowItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyArrowItem.h; sourceTree = "<group>"; };
+		973E269B1CCB1D5C00F7628B /* MyArrowItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyArrowItem.m; sourceTree = "<group>"; };
+		973E269D1CCB2A0300F7628B /* MyBadgeItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBadgeItem.h; sourceTree = "<group>"; };
+		973E269E1CCB2A0300F7628B /* MyBadgeItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyBadgeItem.m; sourceTree = "<group>"; };
+		973E26A01CCB2B0900F7628B /* MySwitchItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySwitchItem.h; sourceTree = "<group>"; };
+		973E26A11CCB2B0900F7628B /* MySwitchItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySwitchItem.m; sourceTree = "<group>"; };
+		973E26A31CCB2B4D00F7628B /* MyCheakItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCheakItem.h; sourceTree = "<group>"; };
+		973E26A41CCB2B4D00F7628B /* MyCheakItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCheakItem.m; sourceTree = "<group>"; };
+		973E26A71CCB2BFF00F7628B /* MyBaseSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyBaseSetting.h; sourceTree = "<group>"; };
 		97515ADA1CC0AE640077A22F /* MyWeibo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyWeibo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97515AE91CC0AE640077A22F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		97515AEE1CC0AE640077A22F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -379,6 +407,12 @@
 		97DD0D901CC8D6060074205B /* MJPhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPhotoView.m; sourceTree = "<group>"; };
 		97DD0D911CC8D6060074205B /* SDWebImageManager+MJ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SDWebImageManager+MJ.h"; sourceTree = "<group>"; };
 		97DD0D921CC8D6060074205B /* SDWebImageManager+MJ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SDWebImageManager+MJ.m"; sourceTree = "<group>"; };
+		97DDA9821CCBB094005BA0DB /* MyProfileCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyProfileCell.h; sourceTree = "<group>"; };
+		97DDA9831CCBB094005BA0DB /* MyProfileCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyProfileCell.m; sourceTree = "<group>"; };
+		97DDA9851CCBB405005BA0DB /* MyLabelItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyLabelItem.h; sourceTree = "<group>"; };
+		97DDA9861CCBB405005BA0DB /* MyLabelItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyLabelItem.m; sourceTree = "<group>"; };
+		97DDA98C1CCBB697005BA0DB /* MySettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MySettingViewController.h; sourceTree = "<group>"; };
+		97DDA98D1CCBB697005BA0DB /* MySettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MySettingViewController.m; sourceTree = "<group>"; };
 		97F5F7D01CC49EA4001E2575 /* MyTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTabBarController.h; sourceTree = "<group>"; };
 		97F5F7D11CC49EA4001E2575 /* MyTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyTabBarController.m; sourceTree = "<group>"; };
 		97F5F7D41CC49EA4001E2575 /* MyTabBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyTabBar.h; sourceTree = "<group>"; };
@@ -463,6 +497,65 @@
 				973398C81CC7B39F00924E4D /* MyStatusFrame.m */,
 			);
 			path = ModelView;
+			sourceTree = "<group>";
+		};
+		973E268A1CCB162400F7628B /* BaseSetting */ = {
+			isa = PBXGroup;
+			children = (
+				973E26A61CCB2BD500F7628B /* Common */,
+				973E268B1CCB162400F7628B /* Controller */,
+				973E268C1CCB162400F7628B /* Model */,
+				973E268D1CCB162400F7628B /* View */,
+			);
+			name = BaseSetting;
+			path = Base/BaseSetting;
+			sourceTree = "<group>";
+		};
+		973E268B1CCB162400F7628B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				973E268E1CCB165200F7628B /* MyBaseSettingViewController.h */,
+				973E268F1CCB165200F7628B /* MyBaseSettingViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		973E268C1CCB162400F7628B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				973E26911CCB16E200F7628B /* MyGroupItem.h */,
+				973E26921CCB16E200F7628B /* MyGroupItem.m */,
+				973E26941CCB171C00F7628B /* MySettingItem.h */,
+				973E26951CCB171C00F7628B /* MySettingItem.m */,
+				973E269A1CCB1D5C00F7628B /* MyArrowItem.h */,
+				973E269B1CCB1D5C00F7628B /* MyArrowItem.m */,
+				973E269D1CCB2A0300F7628B /* MyBadgeItem.h */,
+				973E269E1CCB2A0300F7628B /* MyBadgeItem.m */,
+				973E26A01CCB2B0900F7628B /* MySwitchItem.h */,
+				973E26A11CCB2B0900F7628B /* MySwitchItem.m */,
+				973E26A31CCB2B4D00F7628B /* MyCheakItem.h */,
+				973E26A41CCB2B4D00F7628B /* MyCheakItem.m */,
+				97DDA9851CCBB405005BA0DB /* MyLabelItem.h */,
+				97DDA9861CCBB405005BA0DB /* MyLabelItem.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		973E268D1CCB162400F7628B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				973E26971CCB194E00F7628B /* MySettingCell.h */,
+				973E26981CCB194E00F7628B /* MySettingCell.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		973E26A61CCB2BD500F7628B /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				973E26A71CCB2BFF00F7628B /* MyBaseSetting.h */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 		97515AD11CC0AE640077A22F = {
@@ -954,9 +1047,44 @@
 			path = MJPhotoBrowser;
 			sourceTree = "<group>";
 		};
+		97DDA9881CCBB65D005BA0DB /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				97DDA9891CCBB65D005BA0DB /* Controller */,
+				97DDA98A1CCBB65D005BA0DB /* Model */,
+				97DDA98B1CCBB65D005BA0DB /* View */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		97DDA9891CCBB65D005BA0DB /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				97DDA98C1CCBB697005BA0DB /* MySettingViewController.h */,
+				97DDA98D1CCBB697005BA0DB /* MySettingViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		97DDA98A1CCBB65D005BA0DB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		97DDA98B1CCBB65D005BA0DB /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		97F5F7C51CC49EA4001E2575 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				97DDA9881CCBB65D005BA0DB /* Setting */,
+				973E268A1CCB162400F7628B /* BaseSetting */,
 				9794FEC31CC76BC40061C4C7 /* MyLicense.h */,
 				9794FEC41CC76BC40061C4C7 /* MyLicense.m */,
 				978A53991CC659F70062485E /* OAuth */,
@@ -1173,6 +1301,8 @@
 		97F5F7E41CC49EA4001E2575 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				97DDA9821CCBB094005BA0DB /* MyProfileCell.h */,
+				97DDA9831CCBB094005BA0DB /* MyProfileCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1324,6 +1454,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				973E26931CCB16E200F7628B /* MyGroupItem.m in Sources */,
 				978A54531CC65EE20062485E /* MyUserTool.m in Sources */,
 				9788CFA11CC4AB6A006EC2BC /* MySearchBar.m in Sources */,
 				978A54221CC65C4B0062485E /* MJRefreshConst.m in Sources */,
@@ -1344,13 +1475,16 @@
 				973398C51CC7ABD000924E4D /* MyStatusToolBar.m in Sources */,
 				971D0CC01CCA148D00212BA7 /* MyComposePhotosView.m in Sources */,
 				978A542B1CC65C4B0062485E /* SDWebImageCompat.m in Sources */,
+				973E26991CCB194E00F7628B /* MySettingCell.m in Sources */,
 				978A54231CC65C4B0062485E /* MJRefreshFooterView.m in Sources */,
+				97DDA9841CCBB094005BA0DB /* MyProfileCell.m in Sources */,
 				978A54121CC65C4B0062485E /* AFURLConnectionOperation.m in Sources */,
 				978A54251CC65C4B0062485E /* UIScrollView+MJExtension.m in Sources */,
 				978A54291CC65C4B0062485E /* NSData+ImageContentType.m in Sources */,
 				9788CFC81CC4AE87006EC2BC /* UIImage+Image.m in Sources */,
 				978A54191CC65C4B0062485E /* MJConst.m in Sources */,
 				97DD0D991CC8D6060074205B /* MJPhotoView.m in Sources */,
+				973E269F1CCB2A0300F7628B /* MyBadgeItem.m in Sources */,
 				978A54651CC667CD0062485E /* MyStatus.m in Sources */,
 				9788CFCF1CC4B839006EC2BC /* UIView+MyFrame.m in Sources */,
 				973398C91CC7B39F00924E4D /* MyStatusFrame.m in Sources */,
@@ -1360,6 +1494,7 @@
 				9788CFB31CC4AD0F006EC2BC /* MyNavigationController.m in Sources */,
 				978A546B1CC667E30062485E /* MyPhoto.m in Sources */,
 				971D0CCC1CCA1C6F00212BA7 /* MyComposeTool.m in Sources */,
+				973E26961CCB171C00F7628B /* MySettingItem.m in Sources */,
 				97F5F7E51CC49EA4001E2575 /* MyTabBarController.m in Sources */,
 				9788CFAD1CC4AC77006EC2BC /* MyPopMenu.m in Sources */,
 				978A542D1CC65C4B0062485E /* SDWebImageDownloader.m in Sources */,
@@ -1367,6 +1502,7 @@
 				978A540D1CC65C4B0062485E /* AFHTTPRequestOperation.m in Sources */,
 				9788CF9E1CC4AB28006EC2BC /* MyDiscoverViewController.m in Sources */,
 				979FA4091CC8805D009F0D60 /* NSDate+MJ.m in Sources */,
+				973E269C1CCB1D5C00F7628B /* MyArrowItem.m in Sources */,
 				973398BF1CC7AB3500924E4D /* MyOriginalView.m in Sources */,
 				978A54411CC65D3D0062485E /* MyAccountTool.m in Sources */,
 				978A54101CC65C4B0062485E /* AFNetworkReachabilityManager.m in Sources */,
@@ -1379,6 +1515,7 @@
 				978A54211CC65C4B0062485E /* MJRefreshBaseView.m in Sources */,
 				978A54261CC65C4B0062485E /* UIScrollView+MJRefresh.m in Sources */,
 				978A54441CC65D810062485E /* MyAccountParam.m in Sources */,
+				973E26A51CCB2B4D00F7628B /* MyCheakItem.m in Sources */,
 				97DD0D9A1CC8D6060074205B /* SDWebImageManager+MJ.m in Sources */,
 				978A542E1CC65C4B0062485E /* SDWebImageDownloaderOperation.m in Sources */,
 				978A545F1CC65FFE0062485E /* MyNewFeatureController.m in Sources */,
@@ -1388,9 +1525,11 @@
 				9788CFC71CC4AE87006EC2BC /* UIBarButtonItem+Item.m in Sources */,
 				978A541E1CC65C4B0062485E /* NSObject+MJIvar.m in Sources */,
 				978A54621CC660240062485E /* MyNewFeatureCell.m in Sources */,
+				97DDA98E1CCBB697005BA0DB /* MySettingViewController.m in Sources */,
 				978A540E1CC65C4B0062485E /* AFHTTPRequestOperationManager.m in Sources */,
 				978A54561CC65EFC0062485E /* MyStatusParam.m in Sources */,
 				97AE7D971CC8BDCE00A8289C /* MyPhotosView.m in Sources */,
+				973E26A21CCB2B0900F7628B /* MySwitchItem.m in Sources */,
 				978A541D1CC65C4B0062485E /* NSObject+MJCoding.m in Sources */,
 				978A540F1CC65C4B0062485E /* AFHTTPSessionManager.m in Sources */,
 				9788CFAA1CC4AC5B006EC2BC /* MyTitleButton.m in Sources */,
@@ -1399,6 +1538,7 @@
 				978A54371CC65C4B0062485E /* UIView+WebCacheOperation.m in Sources */,
 				978A542A1CC65C4B0062485E /* SDImageCache.m in Sources */,
 				978A542F1CC65C4B0062485E /* SDWebImageManager.m in Sources */,
+				97DDA9871CCBB405005BA0DB /* MyLabelItem.m in Sources */,
 				978A54131CC65C4B0062485E /* AFURLRequestSerialization.m in Sources */,
 				978A54301CC65C4B0062485E /* SDWebImagePrefetcher.m in Sources */,
 				9794FEC51CC76BC40061C4C7 /* MyLicense.m in Sources */,
@@ -1416,6 +1556,7 @@
 				978A54111CC65C4B0062485E /* AFSecurityPolicy.m in Sources */,
 				9769FBCF1CC8ED02002B7349 /* MyPhotoView.m in Sources */,
 				978A541B1CC65C4B0062485E /* MJIvar.m in Sources */,
+				973E26901CCB165200F7628B /* MyBaseSettingViewController.m in Sources */,
 				978A543E1CC65CF50062485E /* MyOAthViewController.m in Sources */,
 				978A54281CC65C4B0062485E /* MKAnnotationView+WebCache.m in Sources */,
 				9788CFA41CC4ABFF006EC2BC /* MyOneViewController.m in Sources */,

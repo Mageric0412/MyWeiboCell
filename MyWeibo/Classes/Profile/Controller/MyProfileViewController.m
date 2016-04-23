@@ -7,6 +7,9 @@
 //
 
 #import "MyProfileViewController.h"
+#import "MyBaseSetting.h"
+#import "MyProfileCell.h"
+#import "MySettingViewController.h"
 
 @interface MyProfileViewController ()
 
@@ -17,90 +20,93 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    [self setUpNav];
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    UIBarButtonItem *settting = [[UIBarButtonItem alloc] initWithTitle:@"设置"  style:UIBarButtonItemStyleBordered target:self action:@selector(settting)];
-    self.navigationItem.rightBarButtonItem = settting;
+    [self setUpGroup0];
+
+    // 添加第1组
+    [self setUpGroup1];
+    // 添加第2组
+    [self setUpGroup2];
+    // 添加第3组
+    [self setUpGroup3];
 }
 
 #pragma mark - 点击设置的时候调用
 - (void)settting
 {
+    MySettingViewController *settingVc=[[MySettingViewController alloc]init];
+    [self.navigationController pushViewController:settingVc animated:YES]; 
+}
+
+-(void)setUpGroup0
+{
     
+    MyArrowItem *friend=[MyArrowItem itemWithTitle:@"我的好友" image:[UIImage imageNamed:@"new_friend"]];
+    MyGroupItem *group=[[MyGroupItem alloc]init];
+    group.items=@[friend];
+    [self.groups addObject:group];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-#pragma mark - Table view data source
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of rows
-    return 0;
-}
-
-/*
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+- (void)setUpGroup1
+{
+    // 我的相册
+    MyArrowItem *album = [MyArrowItem itemWithTitle:@"我的相册" image:[UIImage imageNamed:@"album"]];
+    album.subTitle = @"(12)";
     
-    // Configure the cell...
+    // 我的收藏
+    MyArrowItem *collect = [MyArrowItem itemWithTitle:@"我的收藏" image:[UIImage imageNamed:@"collect"]];
+    collect.subTitle = @"(0)";
     
+    // 赞
+    MyArrowItem *like = [MyArrowItem itemWithTitle:@"赞" image:[UIImage imageNamed:@"like"]];
+    like.subTitle = @"(0)";
+    MyGroupItem *group = [[MyGroupItem alloc] init];
+    group.items = @[album,collect,like];
+    [self.groups addObject:group];
+}
+- (void)setUpGroup2{
+    // 微博支付
+    MyArrowItem *pay = [MyArrowItem itemWithTitle:@"微博支付" image:[UIImage imageNamed:@"pay"]];
+    // 个性化
+    MyArrowItem *vip = [MyArrowItem itemWithTitle:@"个性化" image:[UIImage imageNamed:@"vip"]];
+    vip.subTitle = @"微博来源、皮肤、封面图";
+    MyGroupItem *group = [[MyGroupItem alloc] init];
+    group.items = @[pay,vip];
+    [self.groups addObject:group];
+}
+- (void)setUpGroup3
+{
+    // 我的二维码
+    MyArrowItem *card = [MyArrowItem itemWithTitle:@"我的二维码" image:[UIImage imageNamed:@"card"]];
+    // 草稿箱
+    MyArrowItem *draft = [MyArrowItem itemWithTitle:@"草稿箱" image:[UIImage imageNamed:@"draft"]];
+    
+    MyGroupItem *group = [[MyGroupItem alloc] init];
+    group.items = @[card,draft];
+    [self.groups addObject:group];
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    MyProfileCell *cell = [MyProfileCell cellWithTableView:tableView];
+    
+    // 获取模型
+    MyGroupItem *groupItem = self.groups[indexPath.section];
+    MySettingItem *item = groupItem.items[indexPath.row];
+    
+    // 设置模型
+    cell.item = item;
+   // [cell setIndexPath:indexPath rowCount:groupItem.items.count];
     return cell;
 }
-*/
 
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+-(void)setUpNav
+{
+    UIBarButtonItem *settting = [[UIBarButtonItem alloc] initWithTitle:@"设置"  style:UIBarButtonItemStyleBordered target:self action:@selector(settting)];
+    self.navigationItem.rightBarButtonItem = settting;
 }
-*/
 
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
