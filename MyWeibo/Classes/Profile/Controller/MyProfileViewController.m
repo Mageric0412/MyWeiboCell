@@ -98,7 +98,7 @@
     
     // 设置模型
     cell.item = item;
-   // [cell setIndexPath:indexPath rowCount:groupItem.items.count];
+    //[cell setIndexPath:indexPath rowCount:groupItem.items.count];
     return cell;
 }
 

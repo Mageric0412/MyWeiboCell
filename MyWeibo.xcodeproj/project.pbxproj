@@ -127,6 +127,11 @@
 		97AE7D931CC8BA9700A8289C /* new_feature_share_false@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 97AE7D851CC8BA9700A8289C /* new_feature_share_false@2x.png */; };
 		97AE7D941CC8BA9700A8289C /* new_feature_share_true@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 97AE7D861CC8BA9700A8289C /* new_feature_share_true@2x.png */; };
 		97AE7D971CC8BDCE00A8289C /* MyPhotosView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97AE7D961CC8BDCE00A8289C /* MyPhotosView.m */; };
+		97BB17A21CCCFAD900DD4539 /* MyCommonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97BB17A11CCCFAD900DD4539 /* MyCommonViewController.m */; };
+		97BB17A51CCCFB0500DD4539 /* MyFontSizeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97BB17A41CCCFB0500DD4539 /* MyFontSizeViewController.m */; };
+		97BB17A81CCCFB1B00DD4539 /* MyQualityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97BB17A71CCCFB1B00DD4539 /* MyQualityViewController.m */; };
+		97BB17AD1CCD00F900DD4539 /* UIBarButtonItem+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = 97BB17AA1CCD00F900DD4539 /* UIBarButtonItem+Create.m */; };
+		97BB17AE1CCD00F900DD4539 /* UIImage+Resizable.m in Sources */ = {isa = PBXBuildFile; fileRef = 97BB17AC1CCD00F900DD4539 /* UIImage+Resizable.m */; };
 		97DD0D931CC8D6060074205B /* MJPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 97DD0D851CC8D6060074205B /* MJPhoto.m */; };
 		97DD0D941CC8D6060074205B /* MJPhotoBrowser.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 97DD0D861CC8D6060074205B /* MJPhotoBrowser.bundle */; };
 		97DD0D951CC8D6060074205B /* MJPhotoBrowser.m in Sources */ = {isa = PBXBuildFile; fileRef = 97DD0D881CC8D6060074205B /* MJPhotoBrowser.m */; };
@@ -392,6 +397,16 @@
 		97AE7D861CC8BA9700A8289C /* new_feature_share_true@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "new_feature_share_true@2x.png"; sourceTree = "<group>"; };
 		97AE7D951CC8BDCE00A8289C /* MyPhotosView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPhotosView.h; sourceTree = "<group>"; };
 		97AE7D961CC8BDCE00A8289C /* MyPhotosView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPhotosView.m; sourceTree = "<group>"; };
+		97BB17A01CCCFAD900DD4539 /* MyCommonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCommonViewController.h; sourceTree = "<group>"; };
+		97BB17A11CCCFAD900DD4539 /* MyCommonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCommonViewController.m; sourceTree = "<group>"; };
+		97BB17A31CCCFB0500DD4539 /* MyFontSizeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyFontSizeViewController.h; sourceTree = "<group>"; };
+		97BB17A41CCCFB0500DD4539 /* MyFontSizeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyFontSizeViewController.m; sourceTree = "<group>"; };
+		97BB17A61CCCFB1B00DD4539 /* MyQualityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyQualityViewController.h; sourceTree = "<group>"; };
+		97BB17A71CCCFB1B00DD4539 /* MyQualityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyQualityViewController.m; sourceTree = "<group>"; };
+		97BB17A91CCD00F900DD4539 /* UIBarButtonItem+Create.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Create.h"; sourceTree = "<group>"; };
+		97BB17AA1CCD00F900DD4539 /* UIBarButtonItem+Create.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Create.m"; sourceTree = "<group>"; };
+		97BB17AB1CCD00F900DD4539 /* UIImage+Resizable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Resizable.h"; sourceTree = "<group>"; };
+		97BB17AC1CCD00F900DD4539 /* UIImage+Resizable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Resizable.m"; sourceTree = "<group>"; };
 		97DD0D841CC8D6060074205B /* MJPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPhoto.h; sourceTree = "<group>"; };
 		97DD0D851CC8D6060074205B /* MJPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPhoto.m; sourceTree = "<group>"; };
 		97DD0D861CC8D6060074205B /* MJPhotoBrowser.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MJPhotoBrowser.bundle; sourceTree = "<group>"; };
@@ -661,6 +676,10 @@
 		9788CFC01CC4AE87006EC2BC /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				97BB17A91CCD00F900DD4539 /* UIBarButtonItem+Create.h */,
+				97BB17AA1CCD00F900DD4539 /* UIBarButtonItem+Create.m */,
+				97BB17AB1CCD00F900DD4539 /* UIImage+Resizable.h */,
+				97BB17AC1CCD00F900DD4539 /* UIImage+Resizable.m */,
 				979FA4071CC8805D009F0D60 /* NSDate+MJ.h */,
 				979FA4081CC8805D009F0D60 /* NSDate+MJ.m */,
 				9788CFC11CC4AE87006EC2BC /* UIBarButtonItem+Item.h */,
@@ -1062,6 +1081,12 @@
 			children = (
 				97DDA98C1CCBB697005BA0DB /* MySettingViewController.h */,
 				97DDA98D1CCBB697005BA0DB /* MySettingViewController.m */,
+				97BB17A01CCCFAD900DD4539 /* MyCommonViewController.h */,
+				97BB17A11CCCFAD900DD4539 /* MyCommonViewController.m */,
+				97BB17A31CCCFB0500DD4539 /* MyFontSizeViewController.h */,
+				97BB17A41CCCFB0500DD4539 /* MyFontSizeViewController.m */,
+				97BB17A61CCCFB1B00DD4539 /* MyQualityViewController.h */,
+				97BB17A71CCCFB1B00DD4539 /* MyQualityViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -1470,6 +1495,7 @@
 				97F5F7E91CC49EA4001E2575 /* main.m in Sources */,
 				978A54341CC65C4B0062485E /* UIImage+WebP.m in Sources */,
 				978A542C1CC65C4B0062485E /* SDWebImageDecoder.m in Sources */,
+				97BB17AE1CCD00F900DD4539 /* UIImage+Resizable.m in Sources */,
 				971D0CBD1CC9FAA800212BA7 /* MyComposeToolBar.m in Sources */,
 				97DD0D961CC8D6060074205B /* MJPhotoLoadingView.m in Sources */,
 				973398C51CC7ABD000924E4D /* MyStatusToolBar.m in Sources */,
@@ -1490,6 +1516,7 @@
 				973398C91CC7B39F00924E4D /* MyStatusFrame.m in Sources */,
 				971D0CC91CCA1C4500212BA7 /* MyUploadParam.m in Sources */,
 				978A54351CC65C4B0062485E /* UIImageView+HighlightedWebCache.m in Sources */,
+				97BB17A81CCCFB1B00DD4539 /* MyQualityViewController.m in Sources */,
 				9788CFBC1CC4ADA0006EC2BC /* MyMessageViewController.m in Sources */,
 				9788CFB31CC4AD0F006EC2BC /* MyNavigationController.m in Sources */,
 				978A546B1CC667E30062485E /* MyPhoto.m in Sources */,
@@ -1501,6 +1528,7 @@
 				978A54311CC65C4B0062485E /* UIButton+WebCache.m in Sources */,
 				978A540D1CC65C4B0062485E /* AFHTTPRequestOperation.m in Sources */,
 				9788CF9E1CC4AB28006EC2BC /* MyDiscoverViewController.m in Sources */,
+				97BB17AD1CCD00F900DD4539 /* UIBarButtonItem+Create.m in Sources */,
 				979FA4091CC8805D009F0D60 /* NSDate+MJ.m in Sources */,
 				973E269C1CCB1D5C00F7628B /* MyArrowItem.m in Sources */,
 				973398BF1CC7AB3500924E4D /* MyOriginalView.m in Sources */,
@@ -1524,6 +1552,7 @@
 				978A544D1CC65EC50062485E /* MyUserParam.m in Sources */,
 				9788CFC71CC4AE87006EC2BC /* UIBarButtonItem+Item.m in Sources */,
 				978A541E1CC65C4B0062485E /* NSObject+MJIvar.m in Sources */,
+				97BB17A51CCCFB0500DD4539 /* MyFontSizeViewController.m in Sources */,
 				978A54621CC660240062485E /* MyNewFeatureCell.m in Sources */,
 				97DDA98E1CCBB697005BA0DB /* MySettingViewController.m in Sources */,
 				978A540E1CC65C4B0062485E /* AFHTTPRequestOperationManager.m in Sources */,
@@ -1561,6 +1590,7 @@
 				978A54281CC65C4B0062485E /* MKAnnotationView+WebCache.m in Sources */,
 				9788CFA41CC4ABFF006EC2BC /* MyOneViewController.m in Sources */,
 				978A53AE1CC65C2E0062485E /* MyAccount.m in Sources */,
+				97BB17A21CCCFAD900DD4539 /* MyCommonViewController.m in Sources */,
 				978A54321CC65C4B0062485E /* UIImage+GIF.m in Sources */,
 				9788CFBF1CC4ADC2006EC2BC /* MyProfileViewController.m in Sources */,
 				978A541A1CC65C4B0062485E /* MJFoundation.m in Sources */,

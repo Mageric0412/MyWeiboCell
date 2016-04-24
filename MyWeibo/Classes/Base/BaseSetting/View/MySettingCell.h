@@ -15,6 +15,7 @@
 
 +(instancetype)cellWithTableView:(UITableView *)tableView;
 
-- (void)setIndexPath:(NSIndexPath *)indexPath rowCount:(int)rowCount;
+//- (void)setIndexPath:(NSIndexPath *)indexPath rowCount:(int)rowCount;
+
 
 @end

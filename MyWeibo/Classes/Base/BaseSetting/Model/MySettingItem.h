@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "UIKit/UIKit.h"
 
+typedef void(^MySettingItemOption)();
+
 @interface MySettingItem : NSObject
 
 @property(nonatomic,strong) UIImage *image;
@@ -18,6 +20,10 @@
 @property(nonatomic,copy)NSString *subTitle;
 
 +(instancetype)itemWithTitle:(NSString *)title;
+
+@property (nonatomic, copy) MySettingItemOption option;
+
+@property (nonatomic, assign) Class descVc;
 
 +(instancetype)itemWithTitle:(NSString *)title image:(UIImage *)image;
 

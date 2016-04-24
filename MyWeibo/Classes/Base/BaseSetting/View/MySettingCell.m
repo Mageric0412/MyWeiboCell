@@ -9,6 +9,7 @@
 #import "MySettingCell.h"
 #import "MyBaseSetting.h"
 #import "MyBadgeView.h"
+#import "UIImage+Resizable.h"
 
 @interface MySettingCell ()
 
@@ -27,18 +28,18 @@
 
 @implementation MySettingCell
 
-//- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
-//{
-//    if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
-//        self.detailTextLabel.font = [UIFont systemFontOfSize:14];
-//        
-//        // 设置背景view
-//        self.backgroundView = [[UIImageView alloc] init];
-//        self.selectedBackgroundView = [[UIImageView alloc] init];
-//        self.backgroundColor = [UIColor clearColor];
-//    }
-//    return self;
-//}
+- (instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
+{
+    if (self = [super initWithStyle:style reuseIdentifier:reuseIdentifier]) {
+        self.detailTextLabel.font = [UIFont systemFontOfSize:14];
+        
+        // 设置背景view
+        self.backgroundView = [[UIImageView alloc] init];
+        self.selectedBackgroundView = [[UIImageView alloc] init];
+       // self.backgroundColor = [UIColor clearColor];
+    }
+    return self;
+}
 
 +(instancetype)cellWithTableView:(UITableView *)tableView
 {
@@ -89,6 +90,8 @@
     if (_switchView == nil) {
        
         _switchView=[[UISwitch alloc]init];
+        
+        [_switchView addTarget:self action:@selector(switchChange:) forControlEvents:UIControlEventValueChanged];
     }
     
     return  _switchView;
@@ -143,8 +146,9 @@
         MyCheakItem *cheakItem=(MyCheakItem *)_item;
         if (cheakItem.cheak) {
             self.accessoryView=self.cheakView;
-        }
+        }else{
         self.accessoryView= nil;
+            }
     
     }else if([_item isKindOfClass:[MyLabelItem class]]){
         
@@ -157,7 +161,40 @@
          _labelView = nil;
     }
     
-    
 }
+
+//-(void)setIndexPath:(NSIndexPath *)indexPath rowCount:(int)rowCount
+//{
+//    UIImageView *bgView = (UIImageView *)self.backgroundView;
+//    UIImageView *selBgView = (UIImageView *)self.selectedBackgroundView;
+//    
+//    if (rowCount == 1) { // 只有一行
+//        bgView.image = [UIImage resizableWithImageName:@"common_card_background"];
+//        selBgView.image = [UIImage resizableWithImageName:@"common_card_background_highlighted"];
+//        
+//    }else if(indexPath.row == 0){ // 顶部cell
+//        bgView.image = [UIImage resizableWithImageName:@"common_card_top_background"];
+//        selBgView.image = [UIImage resizableWithImageName:@"common_card_top_background_highlighted"];
+//        
+//    }else if (indexPath.row == rowCount - 1){ // 底部
+//        bgView.image = [UIImage resizableWithImageName:@"common_card_bottom_background"];
+//        selBgView.image = [UIImage resizableWithImageName:@"common_card_bottom_background_highlighted"];
+//        
+//    }else{ // 中间
+//        bgView.image = [UIImage resizableWithImageName:@"common_card_middle_background"];
+//        selBgView.image = [UIImage resizableWithImageName:@"common_card_middle_background_highlighted"];
+//    }
+//
+//}
+
+- (void)switchChange:(UISwitch *)switchView
+{
+    
+    MySwitchItem *switchItem = (MySwitchItem *)_item;
+    switchItem.on = switchView.on;
+    //.....
+}
+
+
 
 @end

@@ -88,6 +88,28 @@
     return group.footTitle;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    
+    // 获取模型
+    MyGroupItem *groupItem = self.groups[indexPath.section];
+    MySettingItem *item = groupItem.items[indexPath.row];
+    
+    if (item.option) {
+        item.option();
+        return;
+    }
+    
+    
+    if (item.descVc) {
+        UIViewController *vc = [[item.descVc alloc] init];
+        vc.title = item.title;
+        [self.navigationController pushViewController:vc animated:YES];
+    }
+}
+
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {

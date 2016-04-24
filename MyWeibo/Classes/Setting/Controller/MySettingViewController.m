@@ -8,6 +8,7 @@
 
 #import "MySettingViewController.h"
 #import "MyBaseSetting.h"
+#import "MyCommonViewController.h"
 
 @implementation MySettingViewController
 
@@ -39,7 +40,7 @@
     MyArrowItem *notice = [MyArrowItem itemWithTitle:@"我的相册" ];
     // 通用设置
     MyArrowItem *setting = [MyArrowItem itemWithTitle:@"通用设置" ];
-   // setting.descVc = [MyCommonSettingViewController class];
+    setting.descVc = [MyCommonViewController class];
     // 隐私与安全
     MyArrowItem *secure = [MyArrowItem itemWithTitle:@"隐私与安全" ];
     
